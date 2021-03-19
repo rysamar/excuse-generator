@@ -12,11 +12,14 @@ function generator() {
   let what = ["my sandwich ", "my computer ", "my phone ", "my face "];
   let when = ["today", "yesterday", "an hour ago", "a year ago"];
 
-  let number = Math.floor(Math.random() * 4);
+  let number1 = Math.floor(Math.random() * 4);
+  let number2 = Math.floor(Math.random() * 4);
+  let number3 = Math.floor(Math.random() * 4);
+  let number4 = Math.floor(Math.random() * 4);
 
-  theExcuse =
-    theExcuse + who[number] + did[number] + what[number] + when[number];
+  theExcuse = who[number1] + did[number2] + what[number3] + when[number4];
 
   return theExcuse;
 }
 document.write(generator());
+console.log(generator);
